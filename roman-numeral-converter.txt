@@ -1,0 +1,74 @@
+function convertToRoman(num) {
+  var sstr=""
+  while(num>=1){
+    if(num>=1000){
+       num-=1000
+       sstr+="M"
+       continue;
+    };
+    if(num>=900){
+       num-=900
+       sstr+="CM"
+       continue;
+    };
+    if(num>=500){
+       num-=500
+       sstr+="D"
+       continue;
+    };
+    if(num>=400){
+       num-=400
+       sstr+="CD"
+       continue;
+    };
+    if(num>=100){
+       num-=100
+       sstr+="C"
+       continue;
+    };
+    if(num>=90){
+       num-=90
+       sstr+="XC"
+       continue;
+    };
+    if(num>=50){
+       num-=50
+       sstr+="L"
+       continue;
+    };
+    if(num>=40){
+       num-=40
+       sstr+="XL"
+       continue;
+    };
+    if(num>=10){
+       num-=10
+       sstr+="X"
+       continue;
+    };
+    if(num>=9){
+       num-=9
+       sstr+="IX"
+       continue;
+    };
+    if(num>=5){
+       num-=5
+       sstr+="V"
+       continue;
+    };
+    if(num>=4){
+       num-=4
+       sstr+="IV"
+       continue;
+    };
+    if(num>=1){
+       num-=1
+       sstr+="I"
+    };
+    
+  }
+  console.log(sstr)
+ return sstr;
+}
+
+convertToRoman(29);

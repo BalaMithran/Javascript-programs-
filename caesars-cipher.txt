@@ -1,0 +1,23 @@
+function rot13(str) {
+  // var num = "A".charCodeAt()
+  // console.log(num)
+  var i=0
+  var ans=""
+  for (i==0;i<=str.length-1;i++){
+    var num = str[i].charCodeAt()
+    //console.log(num)
+    if(num>=78 && num<=103){
+       ans+=String.fromCharCode(num-13);
+       console.log(ans)
+    }else if(num>=65 && num<=77){
+      ans+=String.fromCharCode(num+13);
+       console.log(ans)
+    }else{
+       ans+=String.fromCharCode(num);
+       console.log(ans)
+    }
+  }
+  return ans;
+}
+
+rot13("SERR PBQR PNZC");

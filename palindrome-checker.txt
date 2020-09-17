@@ -1,0 +1,39 @@
+function palindrome(str) {
+var i;
+str.toLowerCase()
+var s2 = "";
+s2 = str.replace(/[^a-z0-9+]+/gi, '');
+// for (i = 0; i < str.length; i++) {
+//   if (str[i].match(/^([a-z\(\)]+)$/i)){
+//      s2 +=str[i]
+//     //  console.log(s2)
+//     }
+//  }
+//  console.log(s2)
+var j;
+s2=s2.toLowerCase()
+// console.log(s2)
+console.log(s2)
+var flag = 0;
+for (j = 0; j < (s2.length)/2; j++) {
+  
+  // console.log(s2[j])
+  // console.log(s2[(s2.length)-j-1])
+  if (s2[j]!==s2[(s2.length)-j-1]){
+    console.log(s2[j])
+    console.log(s2[(s2.length)-j-1])
+    flag=1;
+};
+}
+console.log(flag)
+  if(flag===1){
+    return false
+  }else{
+    return true
+  }
+}
+
+
+
+
+palindrome("My age is 0, 0 si ega ym.");
